@@ -20,5 +20,7 @@ jobs:
       
     - name: Build the Docker image
       run: docker build -t cicd-pipeline .
+    - name: tag the image
+      run: docker tag cicd-pipeline spranav570/cicd-pipeline:latest
     - name: Push to Dockerhub
       run: docker push spranav570/cicd-pipeline:latest
