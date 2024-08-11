@@ -1,8 +1,8 @@
-name: CI Pipeline1
+name: Docker Image CI
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "main" ]
 
 jobs:
   
